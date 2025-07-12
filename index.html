@@ -2,40 +2,55 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>エチ配信リンクページ</title>
+  <title>配信リンクページ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts：Noto Sans JP -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
+      background: #fffafc;
+      color: #333;
+      font-family: 'Noto Sans JP', sans-serif;
       text-align: center;
       padding: 40px 20px;
     }
+
     h1 {
-      font-size: 28px;
+      font-size: 24px;
       margin-bottom: 10px;
+      font-weight: 600;
     }
+
     p {
+      font-size: 15px;
+      color: #666;
       margin-bottom: 30px;
-      color: #ccc;
     }
+
     .link-button {
       display: inline-block;
-      background: #ff3366;
+      background: #ff6699;
       color: #fff;
       text-decoration: none;
       padding: 14px 28px;
-      border-radius: 8px;
+      border-radius: 12px;
       font-size: 18px;
-      margin-bottom: 40px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(255, 102, 153, 0.3);
+      transition: background 0.3s;
     }
+
+    .link-button:hover {
+      background: #ff4d88;
+    }
+
     .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
-      margin-bottom: 40px;
+      margin: 40px 0;
     }
+
     .video-wrapper iframe,
     .video-wrapper video {
       position: absolute;
@@ -43,29 +58,33 @@
       width: 100%;
       height: 100%;
       border: none;
+      border-radius: 8px;
     }
+
     .footer {
-      font-size: 14px;
-      color: #777;
+      font-size: 13px;
+      color: #aaa;
       margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
-  <h1>秘密のエチ配信はこちら</h1>
-  <p>限定公開のリンクからのみ視聴できます</p>
+  <h1>いま、ひとりで待ってるから…</h1>
+  <p>このリンクからだけ視聴できます</p>
 
-  <a href="https://example.com" class="link-button" target="_blank" rel="noopener noreferrer">
-    ▶ エチ配信を見る
+  <a href="https://example.com/your-private-stream" class="link-button" target="_blank" rel="noopener noreferrer">
+    ▶ 配信を見る
   </a>
 
   <div class="video-wrapper">
+    <!-- 動画プレイヤー（埋め込み or 自分の動画URLに差し替え） -->
     <iframe src="https://example.com/embed/yourvideo" allowfullscreen></iframe>
+    <!-- もしくは <video src="yourvideo.mp4" controls></video> -->
   </div>
 
   <div class="footer">
-    SNSで共有せずに、こっそり楽しんでね❤️
+    ※ 友達には内緒でお願いします
   </div>
 
 </body>
